@@ -1,13 +1,10 @@
+import { Container } from "./components/styles/Container.styled.js"
 import "./App.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>TEST</h1>
-      </header>
-    </div>
-  )
+  return <Container>
+    <h1>TEST</h1>
+  </Container>
 }
 
 export default App
