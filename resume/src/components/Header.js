@@ -10,8 +10,7 @@ function Header({ theme, setTheme }) {
   }
 
   return (
-    <Container>
-      <h1>Head</h1>
+    <Container theme={theme}>
       <button onClick={changeTheme}>click me</button>
     </Container>
   )
