@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-width: 320px;
   margin: 0 auto;
 
-  border-color: ${(props) => props.theme.foregroundColor};
-  border-left: 0.1em solid;
-  border-right: 0.1em solid;
+  background-color: ${(props) => props.theme.backgroundColor};
+  /* border-left: 0.1em solid;
+  border-right: 0.1em solid; */
 `

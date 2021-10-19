@@ -1,8 +1,8 @@
-import { useState } from "react"
 import { ThemeProvider } from "styled-components"
+import { useState } from "react"
 
 import { GlobalStyle } from "./components/styles/Global.styled"
-import { themes } from "./components/styles/ColorScheme"
+import { themes } from "./components/Theme"
 
 import Header from "./components/Header"
 import Main from "./components/Main"
@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <ThemeProvider theme={themes[theme]}>
-        <GlobalStyle DefaultTheme={theme} />
-        <Header theme={theme} setTheme={setTheme} />
-        <Main theme={theme} />
+        <GlobalStyle />
+        <Header currentTheme={theme} setTheme={setTheme} />
+        <Main />
       </ThemeProvider>
     </>
   )

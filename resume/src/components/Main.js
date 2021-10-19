@@ -1,58 +1,74 @@
+import BodyHead from "./BodyHead"
+import Education from "./Education"
+import Skills from "./Skills"
+import Work from "./Work"
+import Project from "./Project"
+
 import { Container } from "./styles/Container.styled"
 import { Grid } from "./styles/Grid.styled"
 import { Column } from "./styles/Column.styled"
+import { BodyDiv, TitleDiv } from "./styles/MainDivs.styled"
 
-function Main({ theme }) {
-  const jobProfile = "< Programmer / Developer >"
+import {
+  FaUserGraduate,
+  FaTools,
+  FaAddressCard,
+  FaUserTie,
+  FaFileCode,
+} from "react-icons/fa"
+
+function Main() {
+  const titleStyle = {
+    placeSelf: "center center",
+    textAlign: "center",
+  }
   return (
-    <Container theme={theme}>
+    <Container>
       <Grid>
-        <Column theme={theme}>
-          <div>
-            <h1>Suraj T C</h1>
-            <h3>{jobProfile}</h3>
-          </div>
-          <div>
-            <h2>Education</h2>
-            <div>
-              <p>Bachelor of Engineering in Computer Science</p>
-              <h5>Maharaj Institute of Technology Mysore</h5>
-              <h5>2017 - 2021</h5>
-            </div>
-          </div>
-          <div>
-            <h2>Technical Skills</h2>
-            <h5>Core Programming Language</h5>
-            <p>Python, Java, C++</p>
-            <h5>Frontend</h5>
-            <p>Javascript, CSS/SASS, ReactJs</p>
-            <h5>Backend</h5>
-            <p>Flask, Django, NodeJS</p>
-            <h5>Database Mangement Systems</h5>
-            <p>SQL(MySQL), MongoDB</p>
-            <h5>Version Control Systems</h5>
-            <p>Git, GitHub</p>
-            <h5>Other Tools</h5>
-            <p>Photoshop, Figma, AfterEffects, JupyterNotebook, Linux</p>
-          </div>
-          <div>
-            <h2>Contact</h2>
+        <TitleDiv style={titleStyle}>
+          <h1>Suraj T C</h1>
+          <h3>{"< Programmer / Developer >"}</h3>
+        </TitleDiv>
+        <TitleDiv>
+          <p>
+            I am a Computer Science graduate from Maharaja Institute of
+            Technology Mysore. Strong communication, coupled with vibrant
+            analytical thinking skills with practical approach. I am seeking an
+            opportunity to prove my skillsets in the area of Computer Science.
+          </p>
+        </TitleDiv>
+      </Grid>
+      <Grid>
+        <Column>
+          <BodyDiv>
+            <BodyHead
+              titleName="Education"
+              iconComponent={<FaUserGraduate />}
+            />
+            <Education
+              courseName="Bachelor of Engineering in Computer Science"
+              universityName="Maharaja Institute of Technology Mysore"
+              yearFrom="2017"
+              yearTo="2021"
+            />
+          </BodyDiv>
+          <BodyDiv>
+            <BodyHead
+              titleName="Technical Skills"
+              iconComponent={<FaTools />}
+            />
+            <Skills />
+          </BodyDiv>
+          <BodyDiv>
+            <BodyHead titleName="Contact" iconComponent={<FaAddressCard />} />
             <h3>Lorem ipsum dolor sit amet.</h3>
-          </div>
+          </BodyDiv>
         </Column>
-        <Column theme={theme}>
-          <div>
-            <h4>
-              I am a Computer Science graduate from Maharaja Institute of
-              Technology Mysore. Strong communication, coupled with vibrant
-              analytical thinking skills with practical approach. I am seeking
-              an opportunity to prove my skillsets in the area of Computer
-              Science.
-            </h4>
-          </div>
-          <div>
-            <h2>Internship</h2>
-            <h5>Machine Learining Intern</h5>
+        <Column>
+          <BodyDiv>
+            <BodyHead titleName="Internship" iconComponent={<FaUserTie />} />
+
+            {/* <h5>Machine Learining Intern</h5>
             <p>IC Solutions</p>
             <h5>October 2020</h5>
             <p>2 Months</p>
@@ -60,41 +76,24 @@ function Main({ theme }) {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Deleniti, eaque? Ab odit incidunt sed debitis assumenda
               praesentium similique repudiandae unde?
-            </p>
-          </div>
-          <div>
-            <h2>Projects</h2>
-            <div>
-              <h5>* Covid 19 Detection using Deep Learning</h5>
-              <h5>Python, Flask, SASS, JavaScript</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p> */}
+
+            <Work
+              time="October 2020"
+              duration="2 months"
+              jobName="Machine Learning Intern"
+              companyName="IC Solution, Bangalore"
+              experienceGained="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt quasi magni earum possimus quidem itaque eum sint
                 repellat, natus atque deleniti, voluptates ut sunt totam neque.
-                Eaque eum reiciendis tenetur!
-              </p>
-            </div>
-            <div>
-              <h5>* Automobile Price Prediction</h5>
-              <h5>Python, Tensorflow</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt quasi magni earum possimus quidem itaque eum sint
-                repellat, natus atque deleniti, voluptates ut sunt totam neque.
-                Eaque eum reiciendis tenetur!
-              </p>
-            </div>
-            <div>
-              <h5>* Vocabulary Builder</h5>
-              <h5>Javascript, SASS</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt quasi magni earum possimus quidem itaque eum sint
-                repellat, natus atque deleniti, voluptates ut sunt totam neque.
-                Eaque eum reiciendis tenetur!
-              </p>
-            </div>
-          </div>
+                Eaque eum reiciendis tenetur!"
+            />
+          </BodyDiv>
+          <BodyDiv>
+            <BodyHead titleName="Projects" iconComponent={<FaFileCode />} />
+
+            <Project />
+          </BodyDiv>
         </Column>
       </Grid>
     </Container>

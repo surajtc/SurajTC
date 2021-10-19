@@ -1,8 +1,8 @@
 import { Container } from "./styles/Container.styled"
 
-function Header({ theme, setTheme }) {
-  function changeTheme() {
-    if (theme === "light") {
+function Header({ currentTheme, setTheme }) {
+  function toggleTheme() {
+    if (currentTheme === "light") {
       setTheme("dark")
     } else {
       setTheme("light")
@@ -10,8 +10,8 @@ function Header({ theme, setTheme }) {
   }
 
   return (
-    <Container theme={theme}>
-      <button onClick={changeTheme}>click me</button>
+    <Container>
+      <button onClick={toggleTheme}>click me</button>
     </Container>
   )
 }

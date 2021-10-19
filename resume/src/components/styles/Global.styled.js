@@ -9,8 +9,8 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle`
   body {
     color: ${(props) => props.theme.foregroundColor};
-    background-color: ${(props) => props.theme.backgroundColor};
-    font-family: 'Source Sans Pro', sans-serif;
+    background-color: ${(props) => props.theme.hilightColor};
+    font-family: 'Poppins', sans-serif;
   }
   * {
   box-sizing: border-box;
