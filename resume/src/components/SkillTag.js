@@ -8,15 +8,16 @@ const TagWrap = styled.div`
   height: 1.7em;
   color: ${(props) => props.theme.foregroundColor};
   /* background-color: ${(props) => props.theme.accentColor}; */
-  border: 0.1em solid ${(props) => props.theme.accentColor};
+  /* border: 0.1em solid ${(props) => props.theme.accentColor}; */
+  background-color: ${(props) => props.theme.accentColor};
+
   /* border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em; */
   border-radius: 0.25em;
-  width: fit-content;
   overflow: hidden;
   div {
     font-size: 1.25rem;
-    background-color: ${(props) => props.theme.accentColor};
+    background-color: ${(props) => props.theme.foregroundColor};
     color: ${(props) => props.theme.backgroundColor};
     height: 100%;
     aspect-ratio: 1;
@@ -24,11 +25,13 @@ const TagWrap = styled.div`
     place-items: center;
   }
   p {
-    min-width: 7ch;
+    /* min-width: 10ch; */
     font-size: 0.75rem;
     font-weight: 600;
     text-align: center;
-    padding: 0 0.25em;
+    color: ${(props) => props.theme.backgroundColor};
+    /* padding: 0 0.25em; */
+    padding-right: 0.5em;
   }
 `
 function SkillTag({ icon, name }) {

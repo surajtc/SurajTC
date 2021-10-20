@@ -2,7 +2,8 @@ import BodyHead from "./BodyHead"
 import Education from "./Education"
 import Skills from "./Skills"
 import Work from "./Work"
-import Project from "./Project"
+import Projects from "./Projects"
+import ContactLinks from "./ContactLinks"
 
 import { Container } from "./styles/Container.styled"
 import { Grid } from "./styles/Grid.styled"
@@ -61,7 +62,7 @@ function Main() {
           </BodyDiv>
           <BodyDiv>
             <BodyHead titleName="Contact" iconComponent={<FaAddressCard />} />
-            <h3>Lorem ipsum dolor sit amet.</h3>
+            <ContactLinks />
           </BodyDiv>
         </Column>
         <Column>
@@ -80,7 +81,7 @@ function Main() {
 
             <Work
               time="October 2020"
-              duration="2 months"
+              duration="2 Months"
               jobName="Machine Learning Intern"
               companyName="IC Solution, Bangalore"
               experienceGained="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -92,7 +93,7 @@ function Main() {
           <BodyDiv>
             <BodyHead titleName="Projects" iconComponent={<FaFileCode />} />
 
-            <Project />
+            <Projects />
           </BodyDiv>
         </Column>
       </Grid>
