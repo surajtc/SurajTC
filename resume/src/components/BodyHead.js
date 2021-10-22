@@ -7,10 +7,10 @@ const H2Styled = styled.h2`
     font-size: 1.25rem;
     align-self: center;
   }
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     justify-content: center;
     align-items: center;
-  }
+  } */
 `
 
 function BodyHead({ titleName, iconComponent }) {

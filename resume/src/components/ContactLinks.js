@@ -23,8 +23,11 @@ function ContactLinks() {
         facilis tenetur.
       </p>
       <div>
-        <Contact icon={<FaGithubAlt />} url="google.com" />
-        <Contact icon={<FaLinkedin />} url="google.com" />
+        <Contact icon={<FaGithubAlt />} url="https://github.com/SurajTC" />
+        <Contact
+          icon={<FaLinkedin />}
+          url="https://www.linkedin.com/in/suraj-t-c-30900920b/"
+        />
         <Contact icon={<SiGmail />} url="google.com" />
       </div>
     </LinkDiv>

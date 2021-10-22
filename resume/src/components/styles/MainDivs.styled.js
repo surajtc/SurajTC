@@ -10,11 +10,11 @@ export const TitleDiv = styled.div`
   p {
     font-weight: 600;
   }
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     p {
       text-align: center;
     }
-  }
+  } */
 `
 
 export const BodyDiv = styled.div``

@@ -22,7 +22,7 @@ const ContactTag = styled.div`
 function Contact({ icon, url }) {
   return (
     <ContactTag>
-      <a href={url}>
+      <a href={url} target="_blank">
         <h4>{icon}</h4>
       </a>
     </ContactTag>

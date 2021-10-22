@@ -29,9 +29,9 @@ const CoreDiv = styled.div`
   /* justify-content: center; */
   padding-bottom: 0.5em;
 
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     justify-content: center;
-  }
+  } */
 `
 const WebDiv = styled.div`
   display: grid;
@@ -52,13 +52,13 @@ const WebDiv = styled.div`
     /* justify-content: center;
     align-items: center; */
   }
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     place-items: center;
     & > div {
       justify-content: center;
       align-items: center;
     }
-  }
+  } */
 `
 
 const H5Styled = styled.h5`
@@ -66,9 +66,9 @@ const H5Styled = styled.h5`
   font-weight: 600;
   /* text-align: center; */
   padding: 0.25em 0;
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     text-align: center;
-  }
+  } */
 `
 
 const IconTag = styled.div`
@@ -87,9 +87,9 @@ const IconTag = styled.div`
     place-items: center;
     border-radius: 0.25em;
   }
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     justify-content: space-evenly;
-  }
+  } */
 `
 
 function Skills() {

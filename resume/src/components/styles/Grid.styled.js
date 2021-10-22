@@ -5,8 +5,9 @@ export const Grid = styled.div`
   gap: 0.5em;
 
   padding: 0.5em 1em;
+  grid-template-columns: 2fr 3fr;
 
-  @media (min-width: 640px) {
+  /* @media (min-width: 640px) {
     grid-template-columns: 2fr 3fr;
-  }
+  } */
 `
