@@ -14,6 +14,7 @@ const HeadStyled = styled.header`
 function Head({ theme, setTheme }) {
   return (
     <HeadStyled>
+      <h3>Résumé</h3>
       <nav>
         <ThemeSwitch theme={theme} setTheme={setTheme} />
       </nav>
