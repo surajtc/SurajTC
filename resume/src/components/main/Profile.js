@@ -1,15 +1,18 @@
 import styled from "styled-components"
 
-import { H1, H3 } from "../styles/HTMLElements"
+import { H1, H5 } from "../styles/HTMLElements"
 import { ProfileInfo } from "./content/Content"
 
-const ProfileStyled = styled.div``
+const ProfileStyled = styled.div`
+  display: grid;
+  place-items: center;
+`
 
 function Profile() {
   return (
     <ProfileStyled>
       <H1>{ProfileInfo.Name}</H1>
-      <H3>{ProfileInfo.Title}</H3>
+      <H5>{ProfileInfo.Title}</H5>
     </ProfileStyled>
   )
 }

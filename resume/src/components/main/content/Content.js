@@ -27,6 +27,12 @@ export const ProfileInfo = {
     "I'm a passionate computer science major, who is continuously seeking opportunities to learn new technologies and solve problems.",
 }
 export const EducationInfo = {
+  // PUC: {
+  //   Course: "Pre Universtiy Course",
+  //   College: "Sadvidya Composite PU College",
+  //   From: "2015",
+  //   To: "2017",
+  // },
   UnderGraduation: {
     Course: "Bachelor of Engineering in Computer Science",
     College: "Maharaja Institute of Technology Mysore",
@@ -138,18 +144,20 @@ export const ProjectsInfo = {
 
 export const ContactInfo = {
   message: "Hey, Have a cool idea to share? Let's connect!",
+  email: "surzavon@gmail.com",
   links: {
     LinkedIn: {
-      link: "link1",
+      link: "https://www.linkedin.com/in/suraj-t-c-30900920b/",
       icon: LinkedinIcon,
     },
-    Gmail: {
-      link: "link1",
-      icon: GmailIcon,
-    },
+
     Github: {
-      link: "link1",
+      link: "https://github.com/SurajTC",
       icon: GithubIcon,
+    },
+    Gmail: {
+      link: "mailto: [surzavon@gmail.com]",
+      icon: GmailIcon,
     },
   },
 }

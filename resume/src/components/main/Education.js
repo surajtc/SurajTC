@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { H3, H4, P2 } from "../styles/HTMLElements"
+import { H3, H6, P2 } from "../styles/HTMLElements"
 
 import SectionTitle from "./sub-components/SectionTitle"
 import { EducationIcon } from "./content/Icons"
@@ -12,13 +12,10 @@ const EducationStyled = styled.div``
 const Fragment = styled.div`
   display: grid;
   place-items: start start;
-  grid-template-columns: auto 4fr;
-  p,
-  h3 {
-    font-size: 1rem;
-  }
+  /* grid-template-columns: 1fr 4fr; */
+  grid-template-columns: 20% 80%;
+
   p {
-    font-weight: 600;
     padding-bottom: 0.25em;
   }
   section {
@@ -28,14 +25,14 @@ const Fragment = styled.div`
     padding-right: 1em;
 
     span {
-      font-size: 0.65rem;
+      font-size: 0.75rem;
+      font-weight: 400;
       display: block;
       text-align: right;
     }
-    h4 {
-      font-size: 0.75rem;
+    H6 {
       text-align: right;
-      font-weight: 600;
+
       /* background-color: green; */
     }
   }
@@ -47,6 +44,8 @@ const Fragment = styled.div`
     padding-left: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+
+    align-items: flex-start;
     &::before {
       content: "";
       position: absolute;
@@ -99,18 +98,18 @@ const Fragment = styled.div`
 function Education() {
   return (
     <EducationStyled>
-      <SectionTitle title="Education" icon={EducationIcon} />
+      <SectionTitle title="EDUCATION" icon={EducationIcon} />
       {Object.entries(EducationInfo).map(([key, education]) => {
         return (
           <Fragment key={key}>
             <section>
-              <H4>{education.From}</H4>
+              <H6>{education.From}</H6>
               <span>to</span>
-              <H4>{education.To}</H4>
+              <H6>{education.To}</H6>
             </section>
             <div>
-              <P2>{education.Course}</P2>
-              <H3>{education.College}</H3>
+              <H3>{education.Course}</H3>
+              <P2>{education.College}</P2>
             </div>
           </Fragment>
         )

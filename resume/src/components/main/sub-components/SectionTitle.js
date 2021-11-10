@@ -1,9 +1,9 @@
-import { H2 } from "../../styles/HTMLElements"
+import { H2, IconSpan } from "../../styles/HTMLElements"
 
 function SectionTitle({ title, icon }) {
   return (
     <H2>
-      <span>{icon}</span>
+      <IconSpan>{icon}</IconSpan>
       {title}
     </H2>
   )

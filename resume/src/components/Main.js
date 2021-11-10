@@ -13,9 +13,17 @@ import Contact from "./main/Contact"
 
 const MainStyled = styled.main`
   ${Container}
+  min-height: 1054px;
   background-color: ${(props) => props.theme.BgColor};
+  padding: 0.5em;
+  display: grid;
+  gap: 0.5em;
 `
-const Section = styled.section``
+const Section = styled.section`
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 0.1em;
+`
 const Column = styled.section``
 
 function Main() {
@@ -46,7 +54,7 @@ function Main() {
           {/* Projects */}
           <Projects />
           {/* Contact (on mobile view)*/}
-          <Contact />
+          {/* <Contact /> */}
         </Column>
       </Section>
     </MainStyled>

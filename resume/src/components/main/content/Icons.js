@@ -4,6 +4,7 @@ import {
   FaUserTie,
   FaFileCode,
   FaAddressCard,
+  FaExternalLinkAlt,
 } from "react-icons/fa"
 
 import {
@@ -33,6 +34,8 @@ export const SkillsIcon = <FaTools />
 export const ExperienceIcon = <FaUserTie />
 export const ProjectsIcon = <FaFileCode />
 export const ContactIcon = <FaAddressCard />
+
+export const LinkIcon = <FaExternalLinkAlt />
 
 export const PythonIcon = <SiPython />
 export const JavaIcon = <SiJava />
